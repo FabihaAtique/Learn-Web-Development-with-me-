@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /*this is a element selector*/
+        p{
+            color: coral;
+        }
+        /*this is a id selector*/
+        #blueelement{
+            color: blue;
+        }
+        /*this is a class selector*/
+        .pink{
+            color: palevioletred;
+        }
+        /*this is a group selector*/
+        span,footer{
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1> CSS selectors </h1>
+    <!-- by using the element selector p, we will select all the paragraphs in our page  -->
+    <!-- if i want want to select some specific selector, id selectors  -->
+    <p> this is simple paragraph for css selectors </p>
+    <p>this is also a simple paragraph </p>
+    <div>
+        <p>this is a paragraph in a div </p>
+    </div>
+    <!-- lets add some styling in a specific paragraph only  -->
+    <!-- reminder that ID is only for one single element. we most commonly use classes  -->
+    <p id="blueelement"> this paragraaph is blue only </p>
+    <!-- use of classes -->
+    <p class="pink">this paragraphh will be pink </p>
+    <!-- we can group the elements for selection too -->
+    <span>this is a span 0</span>
+    <footer>this is a footer </footer>
+</body>
+</head>
