@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation </title>
+    <style>
+        .navbar{
+            background-color: rgb(2, 0, 0);
+            border-radius: 20px;
+            padding: 5px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            /*used this to removve the list bullets*/
+            list-style: none;
+            padding: 3px 3px;
+            margin: 13px 20px;
+        }
+        .navbar li a{ 
+            padding: 3px 3px;
+            /*used to remove the underline from the a href link*/
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .search{
+            color: aliceblue;
+            float: right;
+            padding: 12px 75px;
+        
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 3px;
+            width: 140px;
+        }
+        .navbar li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> contact us </a> </li>
+                <li> <a href="#"> home</a></li>
+                <li> <a href="#">about us</a></li>
+                <li> <a href="#"> services</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+            <div class="search">
+
+            </div>
+        </nav>
+    </header>
+
+    
+</body>
+</html>
