@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height, width, background and borders</title>
+    <style>
+        #firstpara{
+            background-color: rgb(236, 162, 214);
+            height: 100px;
+            width: 455px;
+            border-width: 4px;
+            border-color: blue;
+            border-radius: 20px;
+            border-style:dashed;
+        }
+        /*we can use border: 2px dashed blue in place of all what we have written above too*/
+        #secondpara{
+            background-color: rgb(55, 174, 221);
+            height: 100px;
+            width: 455px;
+            border-width: 4px;
+            border-color: blue;
+            border-radius: 20px;
+            border-style:dashed;
+            border-top: 2px solid greenyellow;
+            border-left:2px soiid palevioletred ;
+            border-right: 2px solid red;
+            border-bottom: 2px solid green;
+            /*we can change the radius for each corner too */
+            border-top-left-radius: 2px;
+        }
+        #thirdpara{
+            height: 400px;
+            width: 600px;
+            background-image: url(https://realprogramming.com/wp-content/uploads/2021/02/online-coding-classes.jpg);
+            border:2px solid blue;
+            background-repeat: no-repeat; /*when i want the image to be repeated only onces */
+            /*repeat-x and repeat-y can be used to make the image repeat in only x or y axis */
+            /*the image will come in center, can do it px wise too to adjust the position of the image */
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is heading </h1>
+    <p id="firstpara">this is a paragraph</p>
+    <p id="secondpara"> this is a paragraph</p>
+    <p id="thirdpara">this is third paragraph</p>
+</body>
+</html>
