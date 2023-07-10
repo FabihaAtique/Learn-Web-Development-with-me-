@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Roboto&display=swap" rel="stylesheet">
+    <title>Allignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        p{
+            font-family: 'Fasthand', cursive;
+        }
+        p,h3{
+            text-align: center;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            /*this is used to make the whole container in the center */
+            margin: 33px auto;
+            background-color: rgb(224, 45, 45);
+
+        }
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(235, 178, 178);
+        }
+        #fruits{
+            /*to make the box float on the left side*/
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #clothes{
+            /*this is used to prevent the overlapping on other divs on this clothes's div*/
+            /*clear left means no left float element should overlap, if we write clear both then neither left nor right one's will overlap */
+            clear: left;
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to my store </h1>
+        <div id="fruits" class="item"> 
+            <h3>fruits </h3>
+            <p id="fruitspara" class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ad in molestiae nesciunt similique harum earum, porro saepe minus ratione doloremque, vero esse, ipsa alias a libero necessitatibus cum rerum! Doloremque laudantium odio voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsam exercitationem quo earum voluptatem. Praesentium pariatur ut quibusdam tenetur, reiciendis repellendus facilis? Quia corrupti ipsa sequi animi perferendis ea possimus, ipsam sapiente voluptas recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum corporis hic asperiores iusto pariatur assumenda ducimus nulla minus accusamus fugiat! </p>
+        </div>
+        <div id="computer" class="item"> 
+            <h3>computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ad in molestiae nesciunt similique harum earum, porro saepe minus ratione doloremque, vero esse, ipsa alias a libero necessitatibus cum rerum! Doloremque laudantium odio voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, sint vel consequuntur vitae iusto recusandae blanditiis quo possimus nulla velit quis? Eum ullam suscipit accusantium, accusamus, unde, obcaecati sit quibusdam ea esse qui veniam. Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, quaerat? </p>
+        </div>
+        <div id="clothes" class="item"> 
+            <h3>clothes </h3>
+            <p id="clothespara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ad in molestiae nesciunt similique harum earum, porro saepe minus ratione doloremque, vero esse, ipsa alias a libero necessitatibus cum rerum! Doloremque laudantium odio voluptate!  </p>
+        </div>
+    </div>
+</body>
+</html>
