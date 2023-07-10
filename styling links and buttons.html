@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and buttons </title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aqua;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        .btn{
+            background-color: rgb(228, 149, 186);
+            padding: 6px;
+            border: none;
+            /*used to add pointer, same clickable on both button and link */
+            cursor: pointer;
+            border-radius: 4px; 
+            font-size: 13px;
+        }
+        a{
+            /*to remove the underline from below */
+            text-decoration: none;
+        }
+        /*sudo selectors */
+        /*same can be done for the btn class*/
+        a:hover{
+            /*when we hover over this link, the link will turn to this color*/
+            color: rgb(98, 181, 202);
+            background-color: aliceblue;
+        }
+        a:visited{
+            /*will turn this color if the link is clicked upon once*/
+            color: chartreuse;
+        }
+        a:active{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h1>this is my heading </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ratione beatae voluptas sequi quibusdam atque placeat ea magni obcaecati minima repellendus iure amet expedita quisquam quod nesciunt maiores odit doloribus nemo vel. Exercitationem qui odio minima quisquam, deserunt aspernatur veniam recusandae quibusdam. Dolor ipsum delectus, magnam a fugit ipsa quia. <br>
+         <a href="https://www.google.com/"
+"       class="btn" >learn more </a> &nbsp; <button class="btn"> contact us </button></p>
+    </div>
+</body>
+</html>
