@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            /*this * is used when we want some attribute to be applied in all the elements */
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aqua;
+            /*the sequemce goes like content -> padding -> border-> margin */
+            border: 3px solid greenyellow;
+            /*we can also adjust the padding from one particular side, like padding-left etc, same for margin */
+            padding: 9px;
+            margin: 34px;
+            /*can set all for values as : padding/ margin: top right bottom left TRBL  */
+            border-radius: 23px;
+            width: 400px;
+            /*this is used to keep the same width of the box, by increasing the padding or anything, the width will not be changed */
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is my heading </h1>
+        <p id="first"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam consequatur suscipit maiores, aspernatur hic doloremque officia optio minus reprehenderit corrupti omnis molestias.</p>
+    </div>
+    <div class="container">
+        <h1>this is my heading </h1>
+        <p id="second"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam consequatur suscipit maiores, aspernatur hic doloremque officia optio minus reprehenderit corrupti omnis molestias.</p>
+    </div>
+    <div class="container">
+        <h1>this is my heading </h1>
+        <p id="third"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nam consequatur suscipit maiores, aspernatur hic doloremque officia optio minus reprehenderit corrupti omnis molestias.</p>
+    </div>
+    
+</body>
+</html>
