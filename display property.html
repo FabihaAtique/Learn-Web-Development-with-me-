@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            /*the header is a block element not inline thus we are able to set its width*/
+            margin: auto;
+            border: 2px solid red;
+            width: 1200px;
+        }
+        img{
+            width: 34px;
+            margin: auto;
+            /*image is actually a inline lement, we have made it a block element so that we can change its width and bring it in the center */
+            display: block;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            /*display: inline-block; can be used to make the boxes inline and adjust their width and size accordingly, in block, they will occupy full spaces  */
+            display:inline-block;
+            width: 33%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://tse2.mm.bing.net/th?id=OIP._0EnJA_hFnx7GvJzuYkULQHaE6&pid=Api&P=0&h=180" alt="no image found">
+        <h3>welcome to Fabiha's blog </h3>
+    </header>
+    <div class="container">
+       <div class="box"> <h4 class="heading">hello</h4>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab, quis, a repudiandae sequi veniam impedit omnis quia dicta, consequatur voluptatibus deleniti aperiam repellendus ut enim sunt quas saepe iure placeat fugit. Aliquid et dolores modi repudiandae consequuntur ducimus tempore praesentium mollitia unde quisquam?</p>
+       </div>
+        <div class="box"> <h4>hello</h4>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab, quis, a repudiandae sequi veniam impedit omnis quia dicta, consequatur voluptatibus deleniti aperiam repellendus ut enim sunt quas saepe iure placeat fugit. Aliquid et dolores modi repudiandae consequuntur ducimus tempore praesentium mollitia unde quisquam?</p>
+        </div>
+        <div class="box"> <h4>hello</h4>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab, quis, a repudiandae sequi veniam impedit omnis quia dicta, consequatur voluptatibus deleniti aperiam repellendus ut enim sunt quas saepe iure placeat fugit. Aliquid et dolores modi repudiandae consequuntur ducimus tempore praesentium mollitia unde quisquam?</p>
+        </div>
+     </div>
+ 
+</body>
+</html>
