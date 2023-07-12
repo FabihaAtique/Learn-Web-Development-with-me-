@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z index</title>
+    <style>
+        .box{
+            width: 170px;;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color:  blue;
+            /*this is used to hide the box from screen with no space being occupied*/
+            display: none;
+
+        }
+        #box2{
+            visibility: hidden;  /*this box will be hidden now but its place will still be occupied*/
+            background-color: red;
+        }
+        #box3{
+            background-color: green;
+        }
+        /*z index is used to specify which box will come on top if two boxes overlap. z index does not work when position is statis */
+        #box4{
+            position: relative;
+            top: 55px;
+            z-index: 34;
+            background-color: yellow;
+        }
+        #box5{
+            top: 60ps;
+            position: relative;
+            z-index: 22;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+</body>
+</html>
