@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodewithFabiha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('picture.webp');
+            color: white;
+            font-family: 'Caprasimo', cursive;
+            font-size: larger;   
+        }
+        .left{
+            
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 16px;
+        }
+        .left img{
+            width: 100px;
+        }
+        .left div{
+            text-align: center;
+            font-size:small;
+        }
+        .mid{
+            
+            display: block;
+            width: 600px;
+            margin: 10px auto;
+            
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 15px;
+            display: inline-block;
+
+        }
+        .navbar{
+            display: inline-block;
+            width: 700;
+
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: crimson;
+            text-decoration: none;
+            padding: 25px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(230, 108, 132)
+        }
+        .btn{
+            margin: 0px 9px;
+            padding: 4px 14px;
+            border: 2px solid rgb(218, 18, 85);
+            border-radius: 10px;
+            color: pink;
+            background-color: rgb(61, 7, 61);
+            cursor: pointer;
+            font-family: 'Caprasimo', cursive;
+            font-size: larger;   
+        }
+        .btn:hover{
+            background-color: crimson
+        }
+        .container{
+            margin: 50px 50px;
+            padding: 30px 30px ;
+            width: 33%;
+            border-radius: 10px;
+            border: 4px solid crimson;
+        }
+        .form_group input{
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            width: 270px;
+            padding: 8px;
+            border: 2px solid black;
+            margin: 6px auto;
+            font-family: 'Caprasimo', cursive;
+        }
+        .container h1{
+            text-align: center;
+            color: crimson;
+        }
+        .container .btn{
+            display: block;
+            margin: 30px auto;
+            width: 160px
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <!-- left for logo -->
+    <div class="left"> 
+        <img src="img.jpeg" alt="image not available ">\
+        <div>CodeWithFabiha</div>
+
+    </div>
+    <!-- for navigation  -->
+    <div class="mid">
+    <ul class="navbar">
+        <li> <a href="#"> home </a> </li>
+        <li> <a href="#">About me</a></li>
+        <li> <a href="#">My codes </a> </li>
+        <li> <a href="#">contact</a></li>
+    </ul>
+</div>
+
+    <!-- for buttons  -->
+    <div class="right" > 
+        <button class="btn">
+            Log in
+        </button>    
+        <button class="btn">
+            Sign Up
+        </button>
+    </div>
+</header>
+<div class="container">
+    <h1>Join My Page to Learn Coding </h1>
+    <form action="noaction.php">
+        <div class="form_group">
+            <input type="text" name="" placeholder="Enter Name">
+        </div>
+        <div class="form_group">
+            <input type="number" name="" placeholder="Enter Age">
+        </div>
+        <div class="form_group">
+            <input type="email" name="" placeholder="Enter Email Address">
+        </div>
+        <div class="form_group">
+            <input type="text" name="" placeholder="Enter Password">
+        </div>
+        <button class="btn">
+            Submit
+        </button>
+    </form>
+</div>
+</body>
+</html>
