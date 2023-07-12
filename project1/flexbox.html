@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border:20px solid black;
+            display: flex; /*this containr now becomes flex, noe we can use the flex properties */
+            /*flex container properties */
+
+
+           /* flex-direction: column;  /*will become vertical*/
+
+            /*by default the direction is row */
+            /*Iflex-direction: row-reverse; /*will fill from reverse direction in a row form */
+            /*flex-direction: column-reverse; /*reverse column */
+           /* flex-direction: row; /*set default*/
+
+            /*flex-wrap: wrap; /*by default its not no-wrap, we wrap to make our boxes wrap and adjust when we want to make our website responsive */
+            /*flex-wrap: wrap-reverse; /*the wrap will be in reverse */
+
+            /*we can set flex-direction and flex-wrap in one line too*/
+            /*flex-flow: row wrap;
+
+            justify-content: center; /*to allign in the center */
+            /*justify-content: space-between; /*even space between the boxes, but not from the corners */
+            /*justify-content: space-evenly; /*even space from all sides, even the corners*/
+            /*justify-content: space-around; /*each box has some specified space around it*/
+
+            /*align-items: center; /*vertically center*/
+            /*align-items: flex-end; /*will come at vertically bottom*/ 
+            /*align-items: flex-start; /*by default, from top vertically*/ 
+        } 
+        .item{
+            background-color: tomato;
+            border: 2px solid rgb(49, 230, 49) ;
+            margin: 10px;
+            padding: 3px;
+            width: 150px;
+            height: 200px;
+            /*flex properties for flex items */
+        }
+        #item1{
+           /* order: 2; /*bigger order one will come at the end */
+
+           flex-grow: 2; /*this item will grow its height and width as we increase the screensie through inspect element. the more value we give it, the more it will grow */ 
+           /*cant give negative numbers here */
+        }
+        #item2{
+            flex-grow: 3; /*will grow more than item1*/
+            flex-shrink: 2; /*will shrink more now as the screen size reduces */
+
+            flex-basis: 230px; /*when flex direction is riw, the fkex basis will set the width*/
+            /*but when flex direction is column, the flex basis will set the height */
+        }
+        #item3{
+            flex: 2 2 330px; /*flex: grow shrink basis*/
+            align-self: center; /*flex-start, flex-end and center can be used set a particular box in top, bottom and center */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>this is a flexbox</h1>
+    <!-- this is a flex container  -->
+    <div class="container">
+        <!-- div.class#id$*6 -->
+        <!-- all these are block elements by default -->
+        <!-- these automatically become flex items  -->
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div>
+    </div>
+
+</body>
+</html>
