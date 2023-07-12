@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        .container{
+            font-size: 10px;
+            /*if i want my container to get to the exact end of the page, same for width */
+            border: 2px solid black;
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /*em helps in recizing of elements, if we resize a parent then child will automaticallly resize */
+            font-size: 2em; /*will take 3 times of the sie of its parent  ie: the container here */
+            padding: 2em; /*will take 3 times the size of the font-size */
+        }
+        #second{
+            /*rem will recize according to the root element, the html tag's font-size */
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is a 1st eading </h1>
+        <h1 id="second">this is a 2nd heading </h1>
+        <h1 id="third">this is a 3rd heading </h1>
+    </div>
+</body>
+</html>
