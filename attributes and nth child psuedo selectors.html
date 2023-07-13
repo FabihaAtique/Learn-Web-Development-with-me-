@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child psuedo selectors </title>
+    <style>
+        input{
+            display: block;
+        }
+        .container{
+            margin: auto;
+            display: block;
+            width: 233px;
+        }
+        input[type=text]{  /*the inpuut whose type is text only */
+            padding: 23px;
+            border: 2px solid red;
+        }
+        input[type=email]{
+            color: yellow;
+            border: 4px solid palevioletred;
+        }
+        a[target]{ /*the ancher tag whose target is set */
+            font-size: 44px;
+            color: plum;
+        }
+        a[target='_self']{ /*the ancher tag whose target is set  to particularly _self*/
+            font-size: 44px;
+            color: rgb(122, 179, 233);
+        }
+
+        li:nth-child(4){  /*will apply css property to the particular nth child */
+            color: rgb(11, 122, 122);
+        }
+        li:nth-child(3n+0){  /*will apply css property to every third child starting from 0th  */
+            color: rgb(231, 46, 154);
+        }
+        /*can make for even and odd directly too
+        li:nth-child(even)
+        li:nth-child(odd)*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- target is set so the google page will be loaded on a new web page -->
+        <a href="http://google.com" target="_blank">go to google</a>
+        <a href="http://facebook.com" target="_self" >go to facebook</a>
+        <form action="" class="form">
+            <input type="text" placeholder="enter your name ">
+            <input type="email" placeholder="enter email address">
+            <input type="password"" placeholder="enter your password">
+            <input type="submit" placeholder="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">first</li>
+            <li class="item" id="item2">second</li>
+            <li class="item" id="item3">third</li>
+            <li class="item" id="item4">fourth</li>
+            <li class="item" id="item5">fifth</li>
+            <li class="item" id="item6">sixth</li>
+            <li class="item" id="item7">seventh</li>
+            <li class="item" id="item8">eighth</li>
+            <li class="item" id="item9">ninth</li>
+            <li class="item" id="item10">tenth</li>
+        </ul>
+    </div>
+</body>
+</html>
