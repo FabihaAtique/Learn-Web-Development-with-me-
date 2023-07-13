@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after psuedo selectors </title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            content: "";
+            background: url(https://images.unsplash.com/photo-1689188962479-21770ef6f712?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) no-repeat  center center/cover;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute; /*the page has hidden the page contents completely */
+
+            z-index: -1; /*now the text on the screen will be visisble */
+            opacity: 0.3;  /*the image will become a bit dull amd the page contents will now be visible */
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center; /*to allign items in center*/
+            height: 344px;
+            justify-content: center; /*the item will come in the center vertically too */
+        }
+        .navigation{
+            display: flex;      
+            font-size: 24px;  
+        }
+
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        section::before{  /*this content will be added just before section */
+            content: "this ia before content "; 
+        }
+        section::after{  /*this content will be added just after section */
+            content: "this ia after content "; 
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation ">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us </li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to the coding world </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat nam cum? Asperiores saepe eligendi dignissimos suscipit quam nihil illo obcaecati quis exercitationem, ipsam repellat veritatis hic, nisi placeat ullam illum quasi mollitia pariatur? Cum saepe maiores repellendus dolore quaerat iusto voluptatibus quam perferendis.</p>
+        </section>
+
+</body>
+</html>
