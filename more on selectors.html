@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors </title>
+    <style>
+        /*a normal selector */
+        h1{
+            color: red;
+            font-weight: bold;
+            background-color: blueviolet;
+            text-align: center;
+        }
+        /*to address the paragraphs within div blocks, all p's that are in a div  */
+        div p{
+            color: darkmagenta;
+        }
+        /*to address the p in the li in the div section only */
+        div li p{
+            color: rgb(39, 238, 39);
+        }
+        /*to address only the direct child of div we use the > symbol*/
+        div > p{
+            color: crimson;
+        }
+        /*to address the paragraph whose previous sibling is a div, previous sibling is the tag which is just before it */
+        div + p{
+            color: beige;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>this is the first paragraph </h1>
+    <div class="container">
+        <ul class="list">
+            <li>
+                <!-- even this p will be selected in the div p selector, even though its not a direct child of div   -->
+                <p>a paragraph in li in div </p>  
+            </li>
+            <li>this will not get effected</li>
+        </ul>
+        <div class="row">
+            <p>this is a paragraph </p>
+        </div>
+        <p>this is outer paragraph</p>
+    </div>
+    <p>this is the outermost paragraph</p>
+</body>
+</html>
