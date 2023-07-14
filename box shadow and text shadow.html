@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text shadow and box shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /*border: 2px solid red*/
+            margin: 23px 12px;
+            background-color: rgb(159, 94, 219);
+            box-shadow: 10px 13px green; /*x y and then color */
+            /*rhese x and y numbers can be negative too */
+            box-shadow: -10px -13px green;
+            /*we can give a blur radius too around the box, just after x and y offset */
+            box-shadow: 10px 10px 40px green;
+            /*we can also add a spread radius around the box too, after blur radius  */
+            box-shadow: 10px 10px 10px 10px rgb(113, 176, 212);
+            /*if we want the shadow to come inside the box */
+            box-shadow: inset 10px 10px rgb(235, 84, 109);
+            /*can give multiple shadows too */
+            box-shadow: 10px 10px red, 30px 20px green;
+        }
+        .card h2{
+            /*offset x , offset y, color */
+            text-shadow: 3px 4px rgb(164, 164, 187);
+            /*we can also give blur, after x and y */
+            text-shadow: 3px 4px 3px rgb(167, 167, 182); 
+            /*similar to the box-shadow, we can include negative values too */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is C++ course   </h2>
+            <p> we are starting a c++ course but we will continue this course too Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum obcaecati, aspernatur unde magni minima corrupti tempora facilis provident asperiores culpa quidem perspiciatis eligendi exercitationem nesciunt! Ducimus commodi nostrum consequuntur ea architecto eveniet numquam provident.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is html course  </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda tempore nobis? Minus, minima. Animi at culpa quasi tempora officiis voluptatum possimus doloribus accusantium ducimus quas numquam laboriosam autem asperiores, magni, natus modi similique.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusantium nisi quam. Corrupti minima sed tempora cum obcaecati quas facere numquam in, similique dolorem perspiciatis praesentium odit rem quia exercitationem! Numquam fugit provident nemo.</p>
+        </div>
+    </div>
+</body>
+</html>
