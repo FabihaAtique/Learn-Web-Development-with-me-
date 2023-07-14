@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties </title>
+    <style>
+        :root{ /*in the root, the variables that we initialize are now global, the container can now use the variable */
+            --box-color:pink;  
+            --maxw:333px;
+        }
+        .box{
+            --box-color:rgb(211, 68, 146); /*this is a css variable */
+            /*now we just need to adjust the variable and the color of background and box shadow will change automatically */
+            /*the scope of this variable is only for this block */
+            width: 200px; 
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            margin: 2px 9px;
+            box-shadow: 3px 3px var(--box-color);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--box-color); /*this will not swt because the variable is out of scope */
+            max-width: var(--maxw);
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
