@@ -1,0 +1,225 @@
+/*css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*css variables */
+:root{
+    --navbar-height: 90px;
+}
+/*logo and image */
+#logo{
+    margin: 20px 20px;
+    height: 100px;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+}
+/*list styling */
+#nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: maroon;
+    height: var(--navbar-height);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+#nav::before{
+    content: " ";
+    /*background-color: brown; */
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#nav ul{
+    display: flex;
+}
+#nav ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Caprasimo', cursive;
+    
+}
+#nav ul li a{
+    display: block; /*so that we ca add padding */
+    padding: 3px 22px;
+    border-radius: 20px; 
+    text-decoration: none;
+    color: white;
+}
+#nav ul li a:hover{
+    color: black;
+    background-color: white;   
+}
+
+/*home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin: 0px;
+}
+#home::before{
+    content: " ";
+    background:url(dinner.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width:100% ;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.67;
+    top: 0;
+    left: 0;
+}
+/*utility class */
+.primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+.secondary{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Serif', serif;
+  
+}
+#home h1{
+    color: rgb(250, 245, 245);
+    text-align: center;
+    font-size: 3.8rem;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Serif', serif;
+  
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: maroon;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    margin-bottom: 40px;
+}
+#services .box{
+    border: 2px solid red ;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(224, 147, 147);
+
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+/*client section */
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+#client img{
+    height: 80px;
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url(pizza.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+#client-section{
+    height: 344px;
+    position: relative;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+    height: 500px;
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(bg.jpeg) no-repeat center center/cover ;
+    background-size: cover;
+    opacity: 0.8;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contactbox form{
+    width: 40%;
+}
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Serif', serif;
+    color: white;
+  
+}
+#contactbox input{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+
+}
+
+/*footer styling */
+footer{
+    position:relative;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+
+}
+
