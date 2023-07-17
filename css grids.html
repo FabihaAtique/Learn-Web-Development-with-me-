@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            display: grid;
+            /*to set the ratio of width between the grd items, there are two methods for measurements */
+            /*grid-template-columns: 300px auto 100px; */
+            /*grid-template-columns: 1fr 3fr 1fr; */
+            grid-template-columns: repeat(4, auto); /*10 columns will be set */
+            grid-gap: 2rem;
+        }
+        .item{
+            /*
+            height: 30px; 
+            width: 100px; */
+            background-color: aqua;
+            padding: 15px 5px;
+            border: 2px solid palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <!-- these are all grid items  -->
+    <div class="container">
+        <div class="item">this is item1</div>
+        <div class="item">this is item2</div>
+        <div class="item">this is item3</div>
+        <div class="item">this is item4</div>
+        <div class="item">this is item5</div>
+        <div class="item">this is item6</div>
+        <div class="item">this is item7</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item9</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+        <div class="item">this is item8</div>
+
+    </div>
+</body>
+</html>
