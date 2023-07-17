@@ -7,6 +7,9 @@
 :root{
     --navbar-height: 90px;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*logo and image */
 #logo{
     margin: 20px 20px;
@@ -20,11 +23,13 @@
 #nav{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     background-color: maroon;
     height: var(--navbar-height);
     z-index: 1;
     opacity: 0.8;
+    top: 0px;
+
 }
 
 #nav::before{
@@ -67,7 +72,7 @@
     justify-content: center;
     align-items: center;
     height: 550px;
-    margin: 0px;
+    margin: 10px;
 }
 #home::before{
     content: " ";
@@ -78,8 +83,9 @@
     position: absolute;
     z-index: -1;
     opacity: 0.67;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
+
 }
 /*utility class */
 .primary{
@@ -126,15 +132,19 @@
     margin: 34px;
     display: flex;
     margin-bottom: 40px;
+
 }
 #services .box{
     border: 2px solid red ;
     padding: 34px;
     margin: 3px 6px;
+    flex-basis: calc(33.33% - 24px); /* Add flex-basis to set the initial size of the boxes */
     border-radius: 23px;
     background-color: rgb(224, 147, 147);
 
 }
+
+
 #services .box img{
     height: 160px;
     display: block;
@@ -146,10 +156,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
+  /*  height: 110px; */
 }
 #client img{
-    height: 80px;
+    height: auto;
+    width: 66px;
+    padding: 6px;
 }
 .client-item{
     padding: 34px;
@@ -172,7 +184,7 @@
 /*contact section*/
 #contact{
     position: relative;
-    height: 500px;
+    height: 600px;
 }
 #contact::before{
     content: " ";

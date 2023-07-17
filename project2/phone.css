@@ -1,0 +1,53 @@
+#nav{
+    flex-direction: column;
+    height: 200px;
+}
+#nav ul li a{
+    font-size: 1.3rem;
+    padding: 4px 4px;
+    margin: 2px 3px;
+}
+#home{
+    height: 1000px;
+    padding: 6px 28px;
+
+}
+#home p{
+    font-size: 1.3rem;
+}
+.primary{
+    font-size: 2rem;
+    
+}
+#home::before{
+    height:1200px;
+    width: 100%;
+}
+#services {
+    flex-direction: column;
+    height: auto;
+}
+#services .box{
+    flex-basis: calc(100% - 24px);
+    padding: 14px;
+    margin: 2px 0px;
+}
+#services .box img{
+    width:80%;
+}
+#client{
+   /*  overflow: hidden; /*only the visisble part will come on screen the rest will be hidden */
+   flex-wrap: wrap;
+}
+#client img{
+    width: 44px;
+    padding: 2px 6px;
+
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+#contactbox form{
+    width: 80%;
+}
