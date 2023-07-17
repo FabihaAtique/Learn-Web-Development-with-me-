@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proper grid </title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr; /*only first second and third row's width, the other rows willl be adjusted to 1fr*/
+            /*if i want to adjust the rest of the rows to a particular width*/
+            /*first second and third rows are specified and the rest of the rows are all 2fr */
+            grid-auto-rows: 2fr;
+            /*fr = fraction*/
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 1rem;
+        }
+        .box{
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">this is box 1</div>
+        <div class="box">this is box 2</div>
+        <div class="box">this is box 3</div>
+        <div class="box">this is box 4</div>
+        <div class="box">this is box 5</div>
+        <div class="box">this is box 6</div>
+        <div class="box">this is box 7</div>
+        <div class="box">this is box 8</div>
+    </div>
+</body>
+</html>
