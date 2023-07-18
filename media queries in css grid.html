@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid and media queries </title>
+    <style>
+        /*we will make our website more responsive using media queries */
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .bordernow{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: rgb(34, 228, 235);
+        }
+
+        @media only screen and (max-width:400px){
+            body{
+                background-color: red;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+ 
+        }
+        @media only screen and (min-width:400px) and (max-width:600px){
+            body{
+                background-color: rgb(252, 17, 95);
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+ 
+        }
+        @media only screen and (min-width:600px) and (max-width:800px){
+            body{
+                background-color: rgb(219, 129, 144);
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+        }
+        @media only screen and (min-width:800px ){
+            body{
+                background-color: lightsalmon;
+                
+            
+            }
+        }
+
+        #nav{
+            grid-area:  nav;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="nav" class="bordernow">
+            <span>home</span>
+            <span>contact us</span>
+            <span>about us </span>
+        </nav>
+        <section id="section" class="bordernow">
+            <h2>learn css </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam architecto fugiat voluptates adipisci vel hic. Facilis, commodi. Dignissimos alias blanditiis quia, sint labore voluptatum explicabo quos velit assumenda molestias atque perferendis exercitationem dolorum ullam est mollitia quidem debitis itaque? Eos tenetur alias exercitationem. Impedit odit quod magnam temporibus, doloribus ullam distinctio recusandae iure at ipsam non hic cum voluptas veritatis ducimus optio a omnis necessitatibus molestiae officia? Aperiam, soluta deleniti sapiente id molestias maxime. Tenetur, quidem sint. Dolores totam iste, necessitatibus, fuga voluptas explicabo voluptatem voluptate quaerat optio nulla perspiciatis. Omnis doloribus dignissimos saepe voluptatem? Blanditiis dolores porro aut totam doloribus eos consequatur commodi necessitatibus maxime.</p>
+        </section>
+        <aside id="aside"  class="bordernow">
+            <h1>more about us </h1>
+        </aside>
+    </div>
+    <footer id='footer' class="bordernow">this is a footer</footer>
+</body>
+</html>
