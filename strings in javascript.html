@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings and strings methods in javascrpits</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, perspiciatis!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis quo eaque vel minima sed eligendi rerum possimus quae ut blanditiis consectetur pariatur doloribus enim labore velit modi sequi, consequuntur nostrum quas expedita incidunt?</p>
+    </div>
+    <script>
+        var a="this is";
+        console.log(a);
+        var b=' fabiha';
+        var c=' happy coding';
+        console.log(a + b +c);  //this will concatinate the strings together 
+        var name='fab';
+        var uni= 'FAST';
+
+        var temp=`${name} is a good person and she studies in ${uni}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`the length of my name is \n ${len}`);
+        //writing a heading dynamically 
+        document.getElementById('content').innerHTML=" <h2> this is a dynamic heading </h2> ";
+    </script>
+</body>
+</html>
