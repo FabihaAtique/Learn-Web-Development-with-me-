@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript string functions </title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae aliquid magnam vitae, vero consequatur consectetur reiciendis. Eaque a molestias nostrum provident id nulla repellendus voluptatem atque sed amet? Ipsum, deserunt esse voluptatem ea provident labore quidem laudantium dolore officiis incidunt quasi enim id asperiores?</p>
+    </div>
+    <script>
+        var str= "this is a string";
+        console.log(str);
+        //this function will give the position of is in my string , gives the first occurance, the is from this 
+        var position = str.indexOf("is");
+        console.log(position);
+        //overriding the variable, the last occurrance of is will be printed now
+        position = str.lastIndexOf("is");
+        console.log(position);
+        //substring from a string
+        //str.slice and str.substring do the same work but slice can take negative values too 
+        var substr = str.slice(1,5);
+        console.log(substr);
+        substr = str.substring(1,5);  //both the functions are doing the same work 
+        console.log(substr);
+        substr = str.substr(1,7);
+        console.log(substr);  //characters from 1 till 7 will be printed 
+        //can do slicing normally too
+        console.log(str[3]); //will print the third character 
+
+        //if i want to replace something from a string 
+        var changed = str.replace('string', 'fabiha'); //this will not change the original string 
+        console.log(changed);
+
+        //this function will convert the string to uppercase or lowercase
+        console.log(str.toLocaleUpperCase());
+        console.log(str.toLocaleLowerCase()); 
+
+        //we can use + sign or concat function to add a string in an existing string 
+        var newstr = str.concat(" added string ");
+        console.log(newstr);
+
+        var strwithspace = "    this    contain   spaces";
+        console.log(strwithspace);
+        console.log(strwithspace.trim()); //will trim the spaces from start and end, not between 
+
+        var char2 = str.charAt(2);
+        console.log(char2);  //will print the char at position 2 
+
+    
+
+
+        </script>
+</body>
+</html>
