@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects in javascript</title>
+</head>
+<body>
+    <div class="container">
+        simple html
+    </div>
+    <script>
+        //we have primitive data types here 
+        let myvar = 34;
+        let myvar1 = 12.333;
+        let myvar2 = 'this is a string';
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined; //the default value of every var is undefined untill we write the value and define it 
+
+        //apart from primitive data types, we also have objects too 
+        let employee = {
+            name: 'fabiha',
+            salary: 1000000,
+            age : 23,
+            degree: 'computer science',
+        }
+        console.log(employee);
+        
+
+        //we have arrays as well , arrays are almost the same as objects, just that there are no key value pairs in arrays 
+        //can have multiple data types in it 
+        let arr =[1,2,3,'fab',true,false, undefined];
+        console.log(arr);
+        console.log(arr[0]); //to print the 0th index only 
+        console.log(arr.length); //prints the length of the array 
+        let arr2 =[33,1,34,6,12,7];
+        arr2 = arr2.sort();
+        console.log(arr2);
+        arr2.push("added");
+        console.log(arr2); //the string added will be added in the array at the ned 
+    </script>
+</body>
+</html>
