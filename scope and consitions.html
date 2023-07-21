@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditions </title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+        </ul>
+    </div>
+    <script>
+        //var has a global scope
+        var string1='this is a string ';
+        var string1='this is another string';
+        //var can be local but only in functions 
+        console.log(string1);
+        let a = 5;
+        //let is used to define variables and the scope is within a block only, for example an if else block 
+        {
+            let a = 6;
+        }
+        console.log(a); //prints 5 because 6 was only for that block
+        //within a block we can only declare the variable with the same name once, cant override 
+        //will use let from now on 
+
+        const b ='this cannot be changed ';
+        console.log(b);
+        // b = 'i want to change this'; //will throw an error 
+
+        //if else condition 
+        let age = 2;
+        if(age>18){
+            console.log("you are an adult");
+        }
+        else if(age ==2){
+            console.log('age is too small ');
+        }
+        else{
+            console.log('you are under age');
+        }
+
+        const degree= 2;
+        switch(degree){
+            case 1:
+                console.log("you are enrolled in software engineering degree");
+                break;
+            case 2:
+                console.log("you are enrolled in computer science degree");
+                break;
+            case 3:
+                console.log("you are enrolled in Artificial intelligence degree");
+                break;
+            default:
+                console.log("you didnt get an admission");
+                break;
+        }
+    </script>
+</body>
+</html>
