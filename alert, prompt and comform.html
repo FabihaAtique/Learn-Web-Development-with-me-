@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction using alert, prompt and conform </title>
+</head>
+<body>
+    <div class="container">
+        this is a page 
+    </div>
+    <script>
+        //alert 
+        //alert is uused to give user a pop up message, the user cannot proceed untill he clicks on okay
+       
+        // let a = alert("this is a message");
+        //console.log(a); //will return undefined on console 
+
+
+        //prompt
+        //prompt is used to ask sonething from the user  
+        //guest is used as a default message 
+
+        //let name = prompt("what is your name", "guest"); //default is not necassary 
+        //console.log(name); 
+
+
+        //confirm
+        //confirm is used to confirm some critical action your user is trying to take 
+        
+        let delpost = confirm("do you really want to delete this postb ?"); 
+        console.log(delpost);  //will print true if user clicks ok, false if he clicks on cancel 
+
+        if(delpost==true){
+            console.log("the post has been deleted ");
+        }
+        else{
+            console.log("the post is not deleted");
+        }
+
+    </script>
+</body>
+</html>

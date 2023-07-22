@@ -21,12 +21,12 @@ greet(name1, greettext);
 greet(name2, greettext);
 greet(name3); //default greettext will be shown now 
 
+
 //a function can resturn something too 
 function sum(a,b,c){
     let d = a+b+c;
     return d; 
 }
-
-let returnsum = sum(2,4,5);
+let returnsum = sum(2,4,5);  
 console.log(returnsum);
 
