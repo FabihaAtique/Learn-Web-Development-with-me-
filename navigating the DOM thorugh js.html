@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> manipulating the DOM in js </title>
+</head>
+<body>
+    <!-- DOM = FOCUMENT OBJECT MODEL  -->
+    <!-- everything which is present in our html body is considered as dom -->
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>home</li>
+            <li>about </li>
+            <li>contact us </li>
+            <li>services </li>
+            <li> codes </li>
+        </ul>
+    </div>
+    <div class="container">
+        another container 
+    </div>
+    <script>
+        //we can navigate to the dom elements 
+        //by using nav.innerHTML = "<li> something </li>" i can change the list elements on html file 
+        //so far we are using id to get to the elements of dom 
+        let main = document.getElementById("main");
+        console.log(main);
+        let nav = document.getElementById("nav");
+        console.log(nav);
+
+        //kets grab ekements by classes 
+        let container = document.getElementsByClassName("container");
+        console.log(container);
+
+        //can also use the css selectors 
+        let sel = document.querySelector(".container");
+        console.log(sel);
+        let navi = document.querySelector("#nav");
+        console.log(navi);
+        let li = document.querySelector("#nav>li");  //this gives the first matched selector 
+        console.log(li);
+        //if we want to select all of the li elements then 
+        let all_li = document.querySelectorAll("nav>li");
+        console.log(all_li);
+
+    </script>
+</body>
+</html>
