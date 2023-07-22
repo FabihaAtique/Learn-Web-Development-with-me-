@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in js </title>
+</head>
+<body>
+    <div class="container">
+        this is about loops in js 
+    </div>
+    <script>
+        console.log("this is a tutorial about loops");
+        let i=0;
+        //for loop 
+        for(i=0; i<10; i++){
+            console.log(i);
+        }
+        console.log("\n");
+        //loops are normally used to iterate through arrays 
+        let arr = [1,2,3,4,5];
+        for(index=0; index < arr.length; index++){
+            console.log(arr[index]);
+        }
+        //an easier way to iterate in an array 
+        for(element of arr){
+            console.log("hello to modern javascript " + element);
+        }
+
+        //now how to iterate through objects 
+        let employee = {
+            name: "fabiha",
+            age:23,
+            salary: 1000000,
+            position: "web developer",
+        }
+        
+        //for in loops are there for objects 
+        for(key in employee){
+            console.log(`the ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loop in js 
+        let age = 0;
+        while(age <18){
+            console.log(`${age}`);
+            console.log("the person is under age ");
+            age++;
+        }
+        age = 20;
+        //similarly there are do while loops too 
+        //this loop runs the first iteration then checks the consition 
+        do{
+            console.log(`${age}`);
+            console.log("the person is under age ");
+            age++;
+        } while(age <18);
+    </script>
+</body>
+</html>
