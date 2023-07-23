@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math objects</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is math object tutorial </h1>
+    </div>
+    <script>
+        let m = Math;  //Math obj has a lot of functions and constants 
+        console.log(m);
+        //printing out the mathamatical constants 
+        console.log("the value of e is: ", Math.E);
+        console.log("the value of pi is: ",Math.PI);
+        console.log("the value of sqrt 2 is: ", Math.SQRT2);
+        console.log("the value of ln 2 is: ", Math.LN2);
+
+        //using the functions of Math obj
+        let a = 34.5422;
+        let b = 12;
+        console.log("the values of a and b are: ", a,b);
+        console.log("the values of rounded a and b are: ", Math.round(a), Math.round(b));
+        console.log("3 raised to the power 2 is: ", Math.pow(3,2));
+        console.log("the square root of 36 is: ", Math.sqrt(36));
+        console.log("the square root of 50 is: ", Math.sqrt(50));
+
+        //ceil returns the round up value 
+        console.log("the round up value of 43.33 is: ", Math.ceil(43.33));
+        //the floor returns the round down value 
+        console.log("the round down value of 45.66 is: ", Math.floor(45.66));
+        //abs value 
+        console.log("the absolute value of -5.66 is: ", Math.abs(-5.66));
+
+        //trig functions 
+        //the value will be given in radians 
+        console.log("the value of sin(pi) is: ", Math.sin(Math.PI));
+        console.log("the value of cos(pi) is: ", Math.cos(Math.PI/2));
+
+        //min and max functions 
+        console.log("minimum value of 4,5,6 is: ", Math.min(4,5,6));
+        console.log("maximum value of 4,5,6 is: ", Math.max(4,5,6));
+
+        //random number generator 
+        let r = Math.random(); //will give a random number in between zero and one 
+        console.log("the random number is ", r);
+        //a formula to generate random number between two numbers a and b is 
+        //b-a*(math.random)
+        let x = 1;
+        let y= 100;
+        let random = (y-x)*Math.random();
+        random= Math.round(random);
+        console.log("a random number between a and b is: ", random);
+
+
+
+
+    </script>
+</body>
+</html>
