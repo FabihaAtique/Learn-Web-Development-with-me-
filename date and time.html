@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time </title>
+    <style>
+        .container{
+            color: rgb(226, 20, 54);
+            background-color: plum;
+            border: 2px solid red;
+            padding: 34px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 23px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        current time is: <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is date and time tutorial ");
+        let now = new Date(); //Date is an object and we are creating it using a constructor 
+        console.log(now);  //will print today's date 
+
+        let dt = new Date(0); //0 means starting time from the reference, it is jan 1 1970
+        console.log(dt);
+        let dt1 = new Date(1000); //1s after the standard reference point 
+        console.log(dt1);
+        let dt2 = new Date("2025-07-19"); //a way to write a specific date 
+        console.log(dt2);
+        //let dt = new Date(year, month, day, hour, minutes, seconds, miliseconds)
+        let dt3 = new Date(3023,7,5,3,12);
+        console.log(dt3);
+        let dt3_yr = dt3.getFullYear();
+        console.log("the year will be: ", dt3_yr);
+        let dt3_mon = dt3.getMonth();
+        console.log("the month will be: ",dt3_mon);
+        let dt3_day = dt3.getDay();
+        console.log("the day will be: ", dt3_day);
+
+        ///we can also change the dates too 
+        dt3.setDate(10);
+        console.log(dt3);
+        //can change the mnoth and year too 
+        let date= new Date(0);
+
+
+        setInterval(updatetime, 1000);
+            function updatetime(){
+                time.innerHTML =new Date;
+            }
+    </script>
+</body>
+</html>
