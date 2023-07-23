@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> arrow function</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function tutorial
+    </div>
+    <script>
+        //this is a slow and long method of writing any function 
+        //function greet(){
+          //  console.log("good morning");
+        //}
+        //greet();
+
+        //fast method, just a method to write a function 
+        //due to the arrow function, we do not have to write the key wird function etc
+        let greet = ()=>{
+            console.log("good morning");
+        }
+        greet();
+
+        setTimeout(() => {
+            console.log("we are inside settimout");
+        },3000);
+
+        let sum = (a,b) =>{
+            return a+b; 
+        };
+        //we can write in more shortcut 
+        let sum2 = (a,b) => a+b; 
+        //no need for brackets even if only 1 argument 
+        let half = a => a/2;
+        //if no arguments, then it is necassary to give the paranthesis 
+
+        let obj={
+            names :["fabiha", "saad" , "aneeq", "asma"],
+            speak(){
+                this.names.forEach((students)=>{  //this is used to refer to attributes of the object 
+                    console.log("helo " + students);
+                });
+            }
+        }
+        obj.speak();
+
+    </script>
+</body>
+</html>
