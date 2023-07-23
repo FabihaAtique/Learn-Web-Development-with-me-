@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut and setinterval </title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is a tutorial ");
+        //setTimeOut allows us to run a function only once after some particular time 
+        //clearTimeout allows us to run a function repeatedly over an interval of time 
+
+        function greet(name){
+            console.log("hello good morning " + name);
+        }
+        //do not include the paranthesis in settimeout 
+       
+        //timeout= setTimeout(greet, 5000, "fab");
+          //the greet function will run after 5s, third argument is the argument within the function 
+        //can add multiple arguments here separated by a comma 
+
+        //if i want to clear the timeout value due to some logic, use cleartimeout function 
+        //console.log(timeout);  //it returns 1, 1 is a unique id assigned to the settimeout function 
+        //we can use cleartimeout(1) to make the settimeout function undefined 
+       
+        // clearTimeout(timeout); //now the settimeout function will not run 
+
+        //will run this function after every 5s 
+        //returns the interval id 
+        //intervalid= setInterval(greet, 5000, "fab")
+        //clearInterval(intervalid);  //similar concept to cleartimeout, will stop the setinterval function 
+
+        //application 
+        function displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById("time").innerHTML = time;
+        }
+        setInterval(displaytime, 1000);  //after every 1 second time will be printed 
+
+    </script>
+</body>
+</html>
